@@ -1,59 +1,148 @@
-# BrandroApp
+# The Brandro - Brand Strategy & PR Website
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.2.0.
+A modern, responsive website for The Brandro - a strategic PR and branding house dedicated to shaping brands with clarity, purpose, and intention.
 
-## Development server
+## 🚀 Features
 
-To start a local development server, run:
+- **Responsive Design**: Optimized for all devices and screen sizes
+- **Modern UI/UX**: Clean, professional design with smooth animations
+- **Dynamic Service Cards**: Different sized cards showcasing various services
+- **YouTube Integration**: Embedded brand story video
+- **Contact Form**: Interactive contact form for client inquiries
+- **SEO Optimized**: Built with Angular and optimized for search engines
 
+## 🛠️ Tech Stack
+
+- **Framework**: Angular 20.2.0
+- **Styling**: Tailwind CSS 3.4.17
+- **Language**: TypeScript 5.9.2
+- **Build Tool**: Angular CLI
+- **Deployment**: Vercel
+
+## 📦 Installation
+
+1. Clone the repository:
 ```bash
-ng serve
+git clone https://github.com/Neeraali-digital/BrandroFrontend-0.1.git
+cd BrandroFrontend-0.1
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
+2. Install dependencies:
 ```bash
-ng generate component component-name
+npm install
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
+3. Start the development server:
 ```bash
-ng generate --help
+npm start
 ```
 
-## Building
+4. Open your browser and navigate to `http://localhost:4200`
 
-To build the project run:
+## 🏗️ Build
 
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+To build the project for production:
 
 ```bash
-ng test
+npm run build
 ```
 
-## Running end-to-end tests
+The build artifacts will be stored in the `dist/brandro-app/browser` directory.
 
-For end-to-end (e2e) testing, run:
+## 🚀 Deployment
 
+### Vercel Deployment
+
+1. **Connect to Vercel**:
+   - Go to [Vercel Dashboard](https://vercel.com/dashboard)
+   - Click "New Project"
+   - Import your GitHub repository
+   - Vercel will automatically detect it's an Angular project
+
+2. **Build Settings**:
+   - Build Command: `npm run build`
+   - Output Directory: `dist/brandro-app/browser`
+   - Install Command: `npm install`
+
+3. **Environment Variables** (if needed):
+   - Add any required environment variables in Vercel dashboard
+
+4. **Deploy**:
+   - Click "Deploy" and Vercel will build and deploy your application
+   - Your site will be available at `https://your-project-name.vercel.app`
+
+### Manual Deployment Steps
+
+1. **Push to GitHub**:
 ```bash
-ng e2e
+git add .
+git commit -m "Prepare for deployment"
+git push origin main
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+2. **Vercel Configuration**:
+   - The `vercel.json` file is already configured for optimal deployment
+   - Static assets are cached for 1 year
+   - All routes redirect to `index.html` for SPA routing
 
-## Additional Resources
+## 📁 Project Structure
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+```
+src/
+├── app/
+│   ├── app.component.html    # Main template with all sections
+│   ├── app.component.scss    # Component-specific styles
+│   ├── app.component.ts      # Main component logic
+│   └── app.config.ts         # App configuration
+├── styles.scss               # Global styles
+└── main.ts                   # Application bootstrap
+
+public/                       # Static assets
+dist/                        # Build output
+vercel.json                  # Vercel deployment configuration
+```
+
+## 🎨 Sections
+
+- **Hero Section**: Main landing area with call-to-action
+- **Our Story**: About section with embedded YouTube video
+- **What We Do**: Service cards with different sizes and detailed descriptions
+- **Our Approach**: 5-step process visualization
+- **Portfolio**: Client logo showcase
+- **YouTube**: Content and channel promotion
+- **Contact**: Contact form and information
+- **Footer**: Links and social media
+
+## 🔧 Configuration Files
+
+- `vercel.json`: Vercel deployment configuration
+- `tailwind.config.js`: Tailwind CSS configuration
+- `angular.json`: Angular CLI configuration
+- `tsconfig.json`: TypeScript configuration
+
+## 📱 Responsive Breakpoints
+
+- **Mobile**: < 768px
+- **Tablet**: 768px - 1024px
+- **Desktop**: > 1024px
+
+## 🎯 Performance
+
+- Optimized images and assets
+- Lazy loading where applicable
+- Minified CSS and JavaScript
+- Efficient caching strategies
+
+## 📞 Support
+
+For support or questions, contact:
+- Email: hello@thebrandro.com
+- Website: [The Brandro](https://your-domain.com)
+
+## 📄 License
+
+This project is proprietary and confidential.
+
+---
+
+Built with ❤️ by The Brandro Team

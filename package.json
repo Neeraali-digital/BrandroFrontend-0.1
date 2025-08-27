@@ -4,7 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --configuration production",
+    "build:static": "ng build --configuration production --output-hashing=all",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:brandro-app": "node dist/brandro-app/server/server.mjs"
