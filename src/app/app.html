@@ -1,0 +1,505 @@
+<!-- Navigation -->
+<nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+      <!-- Logo -->
+      <div class="flex-shrink-0">
+        <h1 class="text-2xl font-display font-bold text-gray-900">The Brandro</h1>
+      </div>
+      
+      <!-- Desktop Navigation -->
+      <div class="hidden md:block">
+        <div class="ml-10 flex items-baseline space-x-8">
+          <a href="#story" class="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors">Our Story</a>
+          <a href="#promises" class="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors">Our Promises</a>
+          <a href="#approach" class="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors">Our Approach</a>
+          <a href="#portfolio" class="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors">Portfolio</a>
+          <a href="#youtube" class="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors">YouTube</a>
+          <a href="#contact" class="bg-gray-900 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-gray-800 transition-colors">Contact</a>
+        </div>
+      </div>
+      
+      <!-- Mobile menu button -->
+      <div class="md:hidden">
+        <button type="button" class="text-gray-700 hover:text-gray-900 focus:outline-none focus:text-gray-900" (click)="toggleMobileMenu()">
+          <span class="material-icons">{{ mobileMenuOpen ? 'close' : 'menu' }}</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Mobile Navigation -->
+  <div class="md:hidden" [class.hidden]="!mobileMenuOpen">
+    <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-gray-100">
+      <a href="#story" class="text-gray-700 hover:text-gray-900 block px-3 py-2 text-base font-medium" (click)="closeMobileMenu()">Our Story</a>
+      <a href="#promises" class="text-gray-700 hover:text-gray-900 block px-3 py-2 text-base font-medium" (click)="closeMobileMenu()">Our Promises</a>
+      <a href="#approach" class="text-gray-700 hover:text-gray-900 block px-3 py-2 text-base font-medium" (click)="closeMobileMenu()">Our Approach</a>
+      <a href="#portfolio" class="text-gray-700 hover:text-gray-900 block px-3 py-2 text-base font-medium" (click)="closeMobileMenu()">Portfolio</a>
+      <a href="#youtube" class="text-gray-700 hover:text-gray-900 block px-3 py-2 text-base font-medium" (click)="closeMobileMenu()">YouTube</a>
+      <a href="#contact" class="bg-gray-900 text-white block px-3 py-2 rounded-lg text-base font-medium hover:bg-gray-800 transition-colors mx-3 mt-4" (click)="closeMobileMenu()">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="pt-24 pb-32 bg-gray-50 relative overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="text-center">
+      <h1 class="text-5xl md:text-7xl font-display font-bold mb-8 leading-tight text-gray-900">
+        We Build Brands<br>
+        <span class="text-gray-600">With Purpose</span>
+      </h1>
+      <p class="text-xl md:text-2xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed">
+        At The Brandro, we help brands move with clarity, confidence, and creativity. 
+        Your story deserves to be told in the right way, to the right people, with the impact it deserves.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+        <a href="#contact" class="bg-gray-900 text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-gray-800 transition-colors">
+          Start Your Journey
+        </a>
+        <a href="#story" class="text-gray-700 hover:text-gray-900 px-8 py-4 text-lg font-medium border border-gray-300 rounded-lg hover:border-gray-400 transition-colors">
+          Learn More
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Our Story Section -->
+<section id="story" class="py-32 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div>
+        <h2 class="text-4xl md:text-5xl font-display font-bold text-gray-900 mb-8">Who We Are</h2>
+        <div class="space-y-6 text-lg text-gray-600 leading-relaxed">
+          <p>
+            We are The Brandro - a strategic PR and branding house dedicated to shaping brands with clarity, purpose, and intention.
+          </p>
+          <p>
+            We partner with businesses to define their voice, craft compelling narratives, and build identities that resonate across cultures and platforms. To us, a brand is more than a logo or campaign - it is a story, a voice, and an experience people remember.
+          </p>
+          <p>
+            By blending strategy with creativity, we ensure your brand doesn't just stand out - it stands for something. At The Brandro, we don't simply build brands. We build them with purpose and intention.
+          </p>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="bg-gray-100 rounded-2xl overflow-hidden shadow-lg">
+          <iframe 
+            class="w-full h-96" 
+            src="https://www.youtube.com/embed/xgrXgYYd5cA?si=Sb4ZqiJkjQwQr6oE" 
+            title="Brand Story Video" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Our Promises Section -->
+<section id="promises" class="py-32 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-20">
+      <h2 class="text-4xl md:text-5xl font-display font-bold text-gray-900 mb-8">What We Do</h2>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        At The Brandro, we help brands move with clarity, confidence, and creativity. Our focus is making sure your story is told in the right way, to the right people, and with the impact it deserves.
+      </p>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Large Featured Card - Public Relations -->
+      <div class="lg:col-span-2 lg:row-span-2 bg-white p-10 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+        <div class="w-16 h-16 bg-gray-900 rounded-xl flex items-center justify-center mb-8">
+          <span class="material-icons text-white text-2xl">campaign</span>
+        </div>
+        <h3 class="text-3xl font-bold text-gray-900 mb-6">Public Relations</h3>
+        <p class="text-gray-600 text-lg mb-6 leading-relaxed">
+          We craft compelling narratives that capture attention and build lasting relationships with your audience. Our strategic PR approach ensures your brand story reaches the right people at the right time.
+        </p>
+        <ul class="space-y-3 text-gray-600">
+          <li class="flex items-center">
+            <span class="w-2 h-2 bg-gray-900 rounded-full mr-3"></span>
+            Media Relations & Press Coverage
+          </li>
+          <li class="flex items-center">
+            <span class="w-2 h-2 bg-gray-900 rounded-full mr-3"></span>
+            Crisis Communication Management
+          </li>
+          <li class="flex items-center">
+            <span class="w-2 h-2 bg-gray-900 rounded-full mr-3"></span>
+            Thought Leadership Development
+          </li>
+        </ul>
+      </div>
+      
+      <!-- Medium Card - Brand Strategy -->
+      <div class="lg:col-span-1 bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+        <div class="w-14 h-14 bg-gray-900 rounded-lg flex items-center justify-center mb-6">
+          <span class="material-icons text-white text-xl">psychology</span>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-900 mb-4">Brand Strategy</h3>
+        <p class="text-gray-600 mb-4">Strategic positioning that defines your unique market presence.</p>
+        <div class="text-sm text-gray-600 font-medium">
+          • Market Analysis<br>
+          • Brand Positioning<br>
+          • Competitive Research
+        </div>
+      </div>
+      
+      <!-- Small Card - Digital Media -->
+      <div class="lg:col-span-1 bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+        <div class="w-12 h-12 bg-gray-900 rounded-lg flex items-center justify-center mb-4">
+          <span class="material-icons text-white">devices</span>
+        </div>
+        <h3 class="text-lg font-semibold text-gray-900 mb-3">Digital & Social</h3>
+        <p class="text-gray-600 text-sm">Engaging campaigns across all digital platforms.</p>
+      </div>
+      
+      <!-- Wide Card - Content Creation -->
+      <div class="lg:col-span-2 bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+        <div class="flex items-start justify-between mb-6">
+          <div class="w-14 h-14 bg-gray-900 rounded-lg flex items-center justify-center">
+            <span class="material-icons text-white text-xl">create</span>
+          </div>
+          <span class="text-gray-600 text-sm font-medium bg-gray-100 px-3 py-1 rounded-full">Popular</span>
+        </div>
+        <h3 class="text-2xl font-semibold text-gray-900 mb-4">Content Creation</h3>
+        <p class="text-gray-600 mb-6">From compelling copy to stunning visuals, we create content that tells your story and drives engagement across all touchpoints.</p>
+        <div class="grid grid-cols-2 gap-4 text-sm">
+          <div class="text-gray-600">
+            <strong>• Copywriting</strong><br>
+            <span class="text-gray-500">Web, ads, social media</span>
+          </div>
+          <div class="text-gray-600">
+            <strong>• Visual Design</strong><br>
+            <span class="text-gray-500">Graphics, photography, video</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Tall Card - Events -->
+      <div class="lg:row-span-2 bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+        <div class="w-14 h-14 bg-gray-900 rounded-lg flex items-center justify-center mb-6">
+          <span class="material-icons text-white text-xl">event</span>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-900 mb-4">Events & Activations</h3>
+        <p class="text-gray-600 mb-6">Memorable experiences that bring your brand to life and create lasting connections.</p>
+        <div class="space-y-4">
+          <div class="bg-gray-50 p-4 rounded-lg">
+            <h4 class="font-medium text-gray-900 mb-2">Launch Events</h4>
+            <p class="text-sm text-gray-600">Product launches and brand reveals</p>
+          </div>
+          <div class="bg-gray-50 p-4 rounded-lg">
+            <h4 class="font-medium text-gray-900 mb-2">Corporate Events</h4>
+            <p class="text-sm text-gray-600">Conferences and networking</p>
+          </div>
+          <div class="bg-gray-50 p-4 rounded-lg">
+            <h4 class="font-medium text-gray-900 mb-2">Experiential</h4>
+            <p class="text-sm text-gray-600">Pop-ups and activations</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Medium Card - Influencer Partnerships -->
+      <div class="lg:col-span-1 bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+        <div class="w-14 h-14 bg-gray-900 rounded-lg flex items-center justify-center mb-6">
+          <span class="material-icons text-white text-xl">people</span>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-900 mb-4">Influencer Partnerships</h3>
+        <p class="text-gray-600 mb-4">Strategic collaborations with the right voices to amplify your message.</p>
+        <div class="text-sm text-gray-600 font-medium">
+          Micro to Macro Influencers<br>
+          Campaign Management<br>
+          Performance Tracking
+        </div>
+      </div>
+      
+      <!-- Small Card - Podcasts -->
+      <div class="lg:col-span-1 bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+        <div class="w-12 h-12 bg-gray-900 rounded-lg flex items-center justify-center mb-4">
+          <span class="material-icons text-white">mic</span>
+        </div>
+        <h3 class="text-lg font-semibold text-gray-900 mb-3">Podcasts</h3>
+        <p class="text-gray-600 text-sm">Voice content that builds authority and connects with audiences.</p>
+      </div>
+      
+      <!-- Wide Card - Launch Campaigns -->
+      <div class="lg:col-span-2 bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+        <div class="flex items-center justify-between mb-6">
+          <div class="w-14 h-14 bg-gray-900 rounded-lg flex items-center justify-center">
+            <span class="material-icons text-white text-xl">rocket_launch</span>
+          </div>
+          <div class="text-right">
+            <span class="text-gray-900 text-2xl font-bold">360°</span>
+            <p class="text-gray-600 text-sm font-medium">Full Service</p>
+          </div>
+        </div>
+        <h3 class="text-2xl font-semibold text-gray-900 mb-4">Launch Campaigns</h3>
+        <p class="text-gray-600 mb-6">Comprehensive launch strategies that create buzz, drive awareness, and ensure successful market entry for your products or services.</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Pre-Launch</span>
+          <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Launch Day</span>
+          <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Post-Launch</span>
+          <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Analytics</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="text-center mt-16">
+      <p class="text-lg text-gray-600 max-w-4xl mx-auto">
+        Whether you are starting fresh or redefining an established identity, we provide the strategy and creativity to help you stand out and grow with intention.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Our Approach Section -->
+<section id="approach" class="py-32 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-20">
+      <h2 class="text-4xl md:text-5xl font-display font-bold text-gray-900 mb-8">Our Approach</h2>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        Our proven process ensures your brand story is crafted with precision and delivered with impact.
+      </p>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+      <div class="text-center group">
+        <div class="w-16 h-16 bg-gray-900 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+          <span class="text-white font-bold text-xl">1</span>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-900 mb-4">Listen & Learn</h3>
+        <p class="text-gray-600">We start by understanding your vision, challenges, and goals.</p>
+      </div>
+      
+      <div class="text-center group">
+        <div class="w-16 h-16 bg-gray-900 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+          <span class="text-white font-bold text-xl">2</span>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-900 mb-4">Define the Strategy</h3>
+        <p class="text-gray-600">We craft a comprehensive strategy tailored to your unique needs.</p>
+      </div>
+      
+      <div class="text-center group">
+        <div class="w-16 h-16 bg-gray-900 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+          <span class="text-white font-bold text-xl">3</span>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-900 mb-4">Build Visibility</h3>
+        <p class="text-gray-600">We execute campaigns that put your brand in front of the right audience.</p>
+      </div>
+      
+      <div class="text-center group">
+        <div class="w-16 h-16 bg-gray-900 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+          <span class="text-white font-bold text-xl">4</span>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-900 mb-4">Create Experiences</h3>
+        <p class="text-gray-600">We design memorable experiences that connect with your audience.</p>
+      </div>
+      
+      <div class="text-center group">
+        <div class="w-16 h-16 bg-gray-900 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+          <span class="text-white font-bold text-xl">5</span>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-900 mb-4">Measure & Evolve</h3>
+        <p class="text-gray-600">We track results and continuously optimize for better outcomes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="py-32 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-20">
+      <h2 class="text-4xl md:text-5xl font-display font-bold text-gray-900 mb-8">Portfolio</h2>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        Discover the brands we've helped transform and the stories we've brought to life.
+      </p>
+    </div>
+    
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+      <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow flex items-center justify-center h-32">
+        <span class="text-gray-400 font-medium">Logo 1</span>
+      </div>
+      <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow flex items-center justify-center h-32">
+        <span class="text-gray-400 font-medium">Logo 2</span>
+      </div>
+      <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow flex items-center justify-center h-32">
+        <span class="text-gray-400 font-medium">Logo 3</span>
+      </div>
+      <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow flex items-center justify-center h-32">
+        <span class="text-gray-400 font-medium">Logo 4</span>
+      </div>
+      <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow flex items-center justify-center h-32">
+        <span class="text-gray-400 font-medium">Logo 5</span>
+      </div>
+      <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow flex items-center justify-center h-32">
+        <span class="text-gray-400 font-medium">Logo 6</span>
+      </div>
+      <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow flex items-center justify-center h-32">
+        <span class="text-gray-400 font-medium">Logo 7</span>
+      </div>
+      <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow flex items-center justify-center h-32">
+        <span class="text-gray-400 font-medium">Logo 8</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- YouTube Section -->
+<section id="youtube" class="py-32 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-20">
+      <h2 class="text-4xl md:text-5xl font-display font-bold text-gray-900 mb-8">YouTube</h2>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        Explore our content, insights, and creative perspectives on branding and PR.
+      </p>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="bg-gray-100 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow">
+        <div class="aspect-video bg-gray-200 flex items-center justify-center">
+          <span class="material-icons text-gray-400 text-4xl">play_circle_outline</span>
+        </div>
+        <div class="p-6">
+          <h3 class="text-lg font-semibold text-gray-900 mb-2">Brand Strategy Insights</h3>
+          <p class="text-gray-600">Learn the fundamentals of building a strong brand strategy.</p>
+        </div>
+      </div>
+      
+      <div class="bg-gray-100 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow">
+        <div class="aspect-video bg-gray-200 flex items-center justify-center">
+          <span class="material-icons text-gray-400 text-4xl">play_circle_outline</span>
+        </div>
+        <div class="p-6">
+          <h3 class="text-lg font-semibold text-gray-900 mb-2">PR Best Practices</h3>
+          <p class="text-gray-600">Discover effective public relations strategies that work.</p>
+        </div>
+      </div>
+      
+      <div class="bg-gray-100 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow">
+        <div class="aspect-video bg-gray-200 flex items-center justify-center">
+          <span class="material-icons text-gray-400 text-4xl">play_circle_outline</span>
+        </div>
+        <div class="p-6">
+          <h3 class="text-lg font-semibold text-gray-900 mb-2">Creative Campaigns</h3>
+          <p class="text-gray-600">Behind the scenes of our most successful campaigns.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="text-center mt-12">
+      <a href="https://youtube.com/@thebrandro?si=hEQivO4Mmyo9FdlG" target="_blank" rel="noopener" class="inline-flex items-center bg-red-600 text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-red-700 transition-colors">
+        <span class="material-icons mr-2">play_arrow</span>
+        Visit Our Channel
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-32 bg-gray-900">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-20">
+      <h2 class="text-4xl md:text-5xl font-display font-bold text-white mb-8">Let's Build Something Great</h2>
+      <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+        Ready to transform your brand? Get in touch and let's start your journey.
+      </p>
+    </div>
+    
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+      <div>
+        <h3 class="text-2xl font-semibold text-white mb-8">Get In Touch</h3>
+        <div class="space-y-6">
+          <div class="flex items-center">
+            <span class="material-icons text-gray-400 mr-4">email</span>
+            <span class="text-gray-300">hello@thebrandro.com</span>
+          </div>
+          <div class="flex items-center">
+            <span class="material-icons text-gray-400 mr-4">phone</span>
+            <span class="text-gray-300">+1 (555) 123-4567</span>
+          </div>
+          <div class="flex items-center">
+            <span class="material-icons text-gray-400 mr-4">location_on</span>
+            <span class="text-gray-300">New York, NY</span>
+          </div>
+        </div>
+      </div>
+      
+      <div>
+        <form class="space-y-6">
+          <div>
+            <label for="name" class="block text-sm font-medium text-gray-300 mb-2">Name</label>
+            <input type="text" id="name" name="name" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent" placeholder="Your name">
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-300 mb-2">Email</label>
+            <input type="email" id="email" name="email" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent" placeholder="your@email.com">
+          </div>
+          <div>
+            <label for="message" class="block text-sm font-medium text-gray-300 mb-2">Message</label>
+            <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent" placeholder="Tell us about your project..."></textarea>
+          </div>
+          <button type="submit" class="w-full bg-white text-gray-900 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-black py-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div class="md:col-span-2">
+        <h3 class="text-2xl font-display font-bold text-white mb-4">The Brandro</h3>
+        <p class="text-gray-400 mb-6 max-w-md">
+          A strategic PR and branding house dedicated to shaping brands with clarity, purpose, and intention.
+        </p>
+        <div class="flex space-x-4">
+          <a href="https://youtube.com/@thebrandro?si=hEQivO4Mmyo9FdlG" target="_blank" rel="noopener" class="text-gray-400 hover:text-white transition-colors">
+            <span class="material-icons">play_arrow</span>
+          </a>
+          <a href="https://www.facebook.com/share/1CNYfoxdic/?mibextid=wwXIfr" target="_blank" rel="noopener" class="text-gray-400 hover:text-white transition-colors">
+            <span class="material-icons">facebook</span>
+          </a>
+          <a href="https://www.instagram.com/the_brandro?igsh=aHVsNjRtbHR5eGw0" target="_blank" rel="noopener" class="text-gray-400 hover:text-white transition-colors">
+            <span class="material-icons">camera_alt</span>
+          </a>
+        </div>
+      </div>
+      
+      <div>
+        <h4 class="text-lg font-semibold text-white mb-4">Services</h4>
+        <ul class="space-y-2 text-gray-400">
+          <li><a href="#promises" class="hover:text-white transition-colors">Public Relations</a></li>
+          <li><a href="#promises" class="hover:text-white transition-colors">Brand Strategy</a></li>
+          <li><a href="#promises" class="hover:text-white transition-colors">Digital Marketing</a></li>
+          <li><a href="#promises" class="hover:text-white transition-colors">Content Creation</a></li>
+        </ul>
+      </div>
+      
+      <div>
+        <h4 class="text-lg font-semibold text-white mb-4">Company</h4>
+        <ul class="space-y-2 text-gray-400">
+          <li><a href="#story" class="hover:text-white transition-colors">About Us</a></li>
+          <li><a href="#approach" class="hover:text-white transition-colors">Our Process</a></li>
+          <li><a href="#portfolio" class="hover:text-white transition-colors">Portfolio</a></li>
+          <li><a href="#contact" class="hover:text-white transition-colors">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+      <p class="text-gray-400">&copy; 2024 The Brandro. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<router-outlet />
