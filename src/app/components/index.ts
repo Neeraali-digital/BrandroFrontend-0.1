@@ -1,0 +1,10 @@
+// Component exports for easier imports
+export { NavigationComponent } from './navigation/navigation.component';
+export { HeroComponent } from './hero/hero.component';
+export { StoryComponent } from './story/story.component';
+export { PromisesComponent } from './promises/promises.component';
+export { ApproachComponent } from './approach/approach.component';
+export { PortfolioComponent } from './portfolio/portfolio.component';
+export { YoutubeComponent } from './youtube/youtube.component';
+export { ContactComponent } from './contact/contact.component';
+export { FooterComponent } from './footer/footer.component';
